@@ -1,4 +1,4 @@
-﻿# CSF3133 Web Design — Lab 
+﻿# CSF3133 Web Design — Lab Practical
 
 This repository contains my lab exercises for the **Web Design** course
 at **UMT**.
