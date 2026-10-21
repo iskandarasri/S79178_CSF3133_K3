@@ -1,4 +1,4 @@
-﻿# CSF3133 Web Design — Lab Practical
+﻿# CSF3133 Web Design — Lab Exercise
 
 This repository contains my lab exercises for the **Web Design** course
 at **UMT**.
@@ -11,10 +11,10 @@ folder corresponds to a lab session or exercise.
 
 ## Contents
 
-| Folder / File | Description |
-|---------------|-------------|
-| `Lab 1/`     | Introduction to HTML structure |
-| ...           | ... |
+| Folder / File | Description | Date |
+|---------------|-------------|------|
+| `Lab 1`     | Introduction to HTML | 21-10-1016 |
+
 
 
 ## Technologies Used
