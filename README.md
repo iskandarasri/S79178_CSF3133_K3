@@ -13,7 +13,7 @@ folder corresponds to a lab session or exercise.
 
 | Folder / File | Description | Date |
 |---------------|-------------|------|
-| `Lab 1`     | Introduction to HTML | 21-10-1016 |
+| `Lab 1`     | Introduction to HTML | 21-10-2026 |
 
 
 
