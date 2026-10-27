@@ -13,7 +13,9 @@ folder corresponds to a lab session or exercise.
 
 | Folder / File | Description | Date |
 |---------------|-------------|------|
-| `Lab 1`     | Introduction to HTML | 21-10-2026 |
+| `index.html`     | Project Directory| - |
+| `Lab 1`     | Introduction to HTML 1 | 21-10-2026 |
+| `Lab 2`     | Introduction to HTML 2 | 28-10-2026 |
 
 
 
