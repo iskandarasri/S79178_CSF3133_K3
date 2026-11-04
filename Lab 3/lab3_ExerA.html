@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery Online Order Page</title>
+</head>
+<body>
+    <!-- Header Block -->
+    <div id="header">
+        <h1>Welcome to Isss Bakery &reg;!</h1>
+        <span>by Iskandar Asri </span>
+    </div><br>
+
+    <!-- Navigation Block -->
+    <div id="navigation">
+        <a href="#content">Home</a> |
+        <a href="#priceList">Price List</a> |
+        <a href="#orderform">Order Form</a> |
+        <a href="#calculator">Calculator</a>
+    </div>
+
+    <!-- Content Block -->
+    <div id="content">
+        <p>
+        At <strong>Isss Bakery</strong>, we craft delicious, handcrafted pastries daily using 
+        <em>premium organic ingredients</em>. Check out our <span class="highlight">daily specials</span> 
+        or visit our <a href="#menu">online menu</a> to order your favorite treats!
+        </p>
+        <!-- Unordered List Menu-->
+        <ul>
+            <li>Fresh Sourdough Bread</li>
+            <li>Artisanal Flaky Croissants</li>
+            <li>Custom Celebration Cakes</li>
+        </ul>
+    </div><br>
+
+    <!-- Price List Block -->
+    <div id="priceList">
+        <h2>Price List</h2>
+        <ul>
+            <li>Isss Bakery&reg; Special Cupcake &mdash; RM3.00</li>
+            <li>Artisan Sliced Cake &mdash; RM5.00</li>
+            <li>Special Offer: Orders &gt; 10 pieces get a free drink!</li>
+        </ul>
+    </div><br>
+
+    <!-- Order Form Block -->
+    <div id="orderform">
+        <h2>Place Your Order</h2>
+        <form id="contactForm">
+            Name: <input type="text" name="name" autofocus required><br><br>
+            Phone Number: <input type="tel" name="phone" required><br><br>
+            Pickup Date: <input type="date" name="date" required><br><br>
+            Flavour: <input list="flavours" id="flavour" name="flavour" placeholder="Choose or type a flavour">
+                    <datalist id="flavours">
+                    <option value="Vanilla">
+                    <option value="Chocolate">
+                    <option value="Strawberry">
+                    <option value="Matcha">
+                    <option value="Red Velvet">
+                    </datalist><br><br>
+            Sweetness Level: <input type="range" name="sweetness" min="1" max="5"><br><br>
+            Icing Color Preference: <input type="color" name="color"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div><br>
+
+    <!-- Price Calculator Block -->
+    <div id="calculator">
+        <h2>Price Calculator</h2>
+        <form oninput="total.value = (parseInt(cupcakes.value || 0) * 3) + (parseInt(cakes.value || 0) * 5)">
+            <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+            <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+            
+            <br><br>
+
+            <label for="cakes">Cake Slices (RM 5.00 each):</label>
+            <input type="number" id="cakes" name="cakes" min="0" value="0">
+            
+            <br><br>
+
+            <label for="total">Total Price (RM):</label>
+            <output id="total" name="total" for="cupcakes cakes">0</output>
+        </form>
+    </div><br>
+
+    <!-- Footer Block -->
+    <div id="footer">
+        <p>All Rights Reserved &copy; 2026 Isss Bakery</p>
+    </div>
+
+</body>
+</html>
