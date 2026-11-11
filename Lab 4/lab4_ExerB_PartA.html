@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+
+    <style type="text/css">
+
+        /* Navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Link states */
+        a:link {
+            color: #1A5276;
+        }
+
+        a:visited {
+            color: #7D3C98;
+        }
+
+        a:hover {
+            color: #E67E22;
+        }
+
+        a:active {
+            color: #C0392B;
+        }
+
+        /* Heading decoration */
+        h1 {
+            text-decoration: overline;
+        }
+
+        /* Paragraph styling */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Introduction styling */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+
+        /* Highlight price */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--
+    PART A: ERROR IDENTIFICATION AND CORRECTIONS
+
+    Error 1 (Line 7): Used HTML comment inside CSS. Corrected to CSS comment.
+    Error 2 (Line 9): list-style-type: no is invalid. Corrected to list-style-type: none.
+    Error 3 (Lines 14-15): Incorrect order of link states. Corrected to :link, :visited, :hover, :active.
+    Error 4 (Line 17): text-decoration: overlined is invalid. Corrected to text-decoration: overline.
+    Error 5 (Line 18): Missing colon after the color property. Corrected to color: #333333.
+    Error 6 (Line 19): Used #intro instead of .intro. 
+    Error 7 (Line 22): Missing dot before highlight selector. Corrected to .highlight.
+    Error 8 (Line 22): Missing closing curly bracket for the intro rule. Added the missing bracket.
+    Error 9 (Line 34): Menu link does not point to the menu section. Changed href="menu" to href="#menu".
+    Error 10 (Lines 42 and 46): Duplicate id="item" used in multiple articles. Replaced with class="item".
+    Error 11 (Line 53): Missing controls attribute in the video element. Added controls.
+    Error 12 (Line 54): Incorrect video type. Changed type="mp4" to type="video/mp4".
+    -->
+
+    <!-- Header -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Only <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Only <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <video width="400" height="300" controls>
+            <source src="https://www.pexels.com/download/video/25311041/" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+
+</body>
+</html>
