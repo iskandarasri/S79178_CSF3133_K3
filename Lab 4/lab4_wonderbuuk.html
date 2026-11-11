@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 4 CSS</title>
+        <link rel="stylesheet" type="text/css" href="lab4_wonderbuuk.css">
+        <style type="text/css">
+            h1 {
+                text-decoration: underline; 
+                margin: 0;
+            }
+
+            h2 {
+                text-decoration: underline; 
+                color: #00105B;
+            }
+
+            h3 {
+                color: #6061B6;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Isss's Page</h1>
+        </header>
+
+         <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#contact">Form</a></li>
+            </ul>
+        </nav>
+
+        <section id="video">
+            <h2>Video Section</h2>
+            <p>Sunset that I captured: </p>
+            <video width="400" height="300" controls>
+                <source src="https://www.pexels.com/download/video/29078293/" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="article">
+            <h2>About Me</h2>
+            <article>
+                <h3>My Background</h3>
+                <p>My name is Iskandar or people call me Isss. I love nature especially sunsets and landscapes. 
+                   I also enjoy coding and creating websites.
+                   I create this webpage to demonstrate the use of semantic HTML elements and CSS.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Lets be Friends!</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Isss's Page. All rights reserved.</p>
+            <address>
+                Contact me at <a href="mailto:iskandarasri032gmail.com">iskandarasri032gmail.com</a>
+            </address>
+        </footer>
+
+    </body>
+</html>
