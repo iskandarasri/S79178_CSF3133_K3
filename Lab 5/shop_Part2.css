@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* .active state for current page */
+nav li a.active {
+  background-color: #04AA6D;
+}
+
+/* Header with background image */
+header.site-header {
+  background-image: url("books.jpg");   /* your asset */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.65);
+}
+
+header.site-header h1 {
+  font-family: 'Merriweather', serif;
+  margin: 0 0 8px;
+  color: white;   
+}
+
+header.site-header p {
+  margin: 0;
+}
+
+/* Typography */
+main {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+main p {
+  line-height: 1.6;
+}
+
+main h2 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Table Styling */
+#product {
+  border-collapse: collapse;   /* FIX: 'collapsed' -> 'collapse' */
+  width: 100%;
+}
+
+#product td,
+#product th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Alternating even rows */
+#product tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+#product tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Table header: uppercase, centred, extra vertical padding */
+#product th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Right-align the Price column */
+#product th:last-child,
+#product td:last-child {
+  text-align: right;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
