@@ -18,6 +18,7 @@ folder corresponds to a lab session or exercise.
 | `Lab 2`     | Introduction to HTML 2 | 28-10-2026 |
 | `Lab 3`     | HTML5 | 04-11-2026 |
 | `Lab 4`     | CSS 1 | 11-11-2026 |
+| `Lab 5`     | CSS 2 | 18-11-2026 |
 
 
 ## Technologies Used
