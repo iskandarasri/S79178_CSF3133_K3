@@ -1,0 +1,132 @@
+/* Global Reset and Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #0b3d91; /* UMT / Marine Blue tone */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #222222;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    background-color: #111111;
+}
+
+nav li a.active {
+    background-color: #0b3d91;
+}
+
+/* Main Content Wrapper */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-family: 'Merriweather', serif;
+    color: #0b3d91;
+    border-left: 4px solid #0b3d91;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #444;
+}
+
+/* Table Styling */
+#umt-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#umt-table th, #umt-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#umt-table th {
+    background-color: #0b3d91;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#umt-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#umt-table tr:hover {
+    background-color: #eef2f7;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e2e8f0;
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
