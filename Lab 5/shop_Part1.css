@@ -1,0 +1,83 @@
+/* 
+Part 1: List of errors found. Line mentioned in the error message refers to the line number in the file where the error was found.
+
+
+Error 1 (Line 2): Font family misspelled "Robotto", changed to 'Roboto'.
+Error 2 (Line 4): "background-repeat: no repeat" is invalid, changed to "no-repeat".
+Error 3 (Line 18): Link used "display: inline", changed to "display: block" so padding works in the nav bar.
+Error 4 (Line 23): Selector "li:a:hover" is invalid, changed to "li a:hover".
+Error 5 (Line 26): ID selector "#products" does not match HTML id "product".
+Error 6 (Line 27): "border-collapse: collapsed" is invalid, changed to "collapse".
+Error 7 (Lines 30, 34, 37, 40): All table selectors use "#products" but the table id is "product", corrected to "#product".
+Error 8 (Line 34): "tr:nth-child(2)" highlights only one row, changed to "tr:nth-child(even)" for alternating rows.
+*/
+
+/* FIX 4: 'Robotto' -> 'Roboto' */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  /* FIX 5: 'no repeat' -> 'no-repeat' */
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  /* FIX 6: 'inline' -> 'block' */
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* FIX 7: 'li:a:hover' -> 'li a:hover' */
+li a:hover {
+  background-color: #111;
+}
+
+/* FIX 8: '#products' -> '#product' */
+#product {
+  /* FIX 9: 'collapsed' -> 'collapse' */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* FIX 10: '#products' -> '#product' (both selectors) */
+#product td,
+#product th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* FIX 11: nth-child(2) -> nth-child(even) */
+#product tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* FIX 10: '#products' -> '#product' */
+#product tr:hover {
+  background-color: #ddd;
+}
+
+/* FIX 10: '#products' -> '#product' */
+#product th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
